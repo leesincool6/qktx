@@ -18,4 +18,9 @@ https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) url script-request-head
 #趣看天下获取ck loon
 
 http-request https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) script-path= https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_cookie.js, requires-body=true, timeout=30, tag=趣看天下ck
+#loon执行
 
+cron "0 */2 0-22 * * *" script-path= https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_task2.js, tag=趣看天下极速版
+
+#QX执行
+0 */2 0-22 * * * https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_task2.js, tag=趣看天下极速版, enabled=true
