@@ -21,6 +21,10 @@ http-request https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) script-pat
 #loon执行
 
 cron "0 */2 0-22 * * *" script-path= https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_task2.js, tag=趣看天下极速版
+#loon主机名添加两条
+
+appv8.qukantianxia.com
+appv7.qukantx.com
 
 #QX执行
 0 */2 0-22 * * * https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_task2.js, tag=趣看天下极速版, enabled=true
