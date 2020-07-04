@@ -433,7 +433,7 @@ function htt_getarticle()
 {var sbbb=obj.data[0].taskId;
 qktx_urlrck=isdefined(qktx_urlrck,sbbb);
 qktx_urlck=isdefined(qktx_urlck,sbbb);
-if(log==1)console.log("趣看天下运行中...不要关闭，更新关注公众号iosrule，以下代码可能运行30秒以上");
+if(log==1)console.log("趣看天下运行中...不要关闭，以下代码可能运行30秒以上");
   htt_bestread(gonext,sbbb);}
 })    
 }
