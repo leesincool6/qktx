@@ -24,3 +24,5 @@ cron "0 */2 0-22 * * *" script-path= https://raw.githubusercontent.com/zmmmasa/q
 
 #QX执行
 0 */2 0-22 * * * https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_task2.js, tag=趣看天下极速版, enabled=true
+
+hostname= appv8.qukantianxia.com, appv7.qukantx.com
