@@ -20,11 +20,11 @@ Qx的参考app例子,有不懂的加微信撸金币群。
 
 获取ck完毕可以禁止该js
 #趣看天下ck Qx
-https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) url script-request-header qktx_cookie.js
+https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) url script-request-header https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_cookie.js
 
 #趣看天下获取ck loon
 
-http-request https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) script-path=qktx_cookie.js, requires-body=true, timeout=30, tag=趣看天下ck
+http-request https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) script-path= https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_cookie.js, requires-body=true, timeout=30, tag=趣看天下ck
 
 ====================================
 
