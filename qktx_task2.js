@@ -4,7 +4,7 @@ by红鲤鱼与绿鲤鱼与驴 2020.7.3
 
 #趣看天下签到定时执行任务loon定时格式参考
 #趣看天下task Loon的格式
-cron "0 21,31,50 0-22 * * ?" script-path=https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_task2.js, tag=趣看天下
+cron "0 */2 0-22 * * *" script-path=https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_task2.js, tag=趣看天下
 
 Qx的参考app例子,有不懂的加微信撸金币群。
 
