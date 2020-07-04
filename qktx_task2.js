@@ -1,10 +1,10 @@
 /*
 我的趣看天下邀请码:9849555
-by红鲤鱼与绿鲤鱼与驴 2020.7.3
+公众号iosrule by红鲤鱼与绿鲤鱼与驴 2020.7.3
 
 #趣看天下签到定时执行任务loon定时格式参考
 #趣看天下task Loon的格式
-cron "0 */2 0-22 * * *" script-path=https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_task2.js, tag=趣看天下
+cron "0 21,31,50 0-22 * * ?" script-path=qktx_task.js, tag=趣看天下
 
 Qx的参考app例子,有不懂的加微信撸金币群。
 
@@ -20,11 +20,11 @@ Qx的参考app例子,有不懂的加微信撸金币群。
 
 获取ck完毕可以禁止该js
 #趣看天下ck Qx
-https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) url script-request-header https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_cookie.js
+https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) url script-request-header qktx_cookie.js
 
 #趣看天下获取ck loon
 
-http-request https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) script-path=https://raw.githubusercontent.com/zmmmasa/qktx/master/qktx_cookie.js, requires-body=true, timeout=30, tag=趣看天下ck
+http-request https:\/\/(appv8\.qukantianxia\.com|appv7\.qukantx\.com) script-path=qktx_cookie.js, requires-body=true, timeout=30, tag=趣看天下ck
 
 ====================================
 
@@ -36,7 +36,7 @@ MITM=appv8.qukantianxia.com,appv7.qukantx.com
 
 
 
-const Notice=1;//设置运行多少次才通知。
+const Notice=30;//设置运行多少次才通知。
 const log=1;//设置0关闭日志,1开启日志
 const noNotice=0;//1关闭通知0打开通知.
 
@@ -559,7 +559,6 @@ function iosrule() {
     }
     return { isRequest, isQuanX, isSurge, notify, write, read, get, post, end }
 };
-
 
 
 
